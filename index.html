@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gani</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="experience.css" />
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
-    <header>
-      <div class="container" id="homepage">
+    <header id="home">
+      <div class="container">
         <nav id="navigationBar">
-          <a class="active-link" href="#">Home</a>
+          <a class="active-link" href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#">Experience</a>
-          <a href="#">Contact</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
         </nav>
         <div class="hero">
           <div class="heroleft">
@@ -198,6 +201,125 @@
       </div>
     </section>
 
+    <section id="contact">
+      <h5>Lets</h5>
+      <h2>Get in touch</h2>
+      <div class="container contact__container">
+        <div class="contact-left">
+          <div class="contact-card">
+            <article>
+              <div>
+                <ion-icon
+                  class="text-primary-variant"
+                  name="mail-sharp"
+                ></ion-icon>
+              </div>
+              <div>
+                <a
+                  href="mailto:abdulgani.work@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="text-primary"
+                  >Drop a mail</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="contact-card">
+            <article>
+              <div>
+                <ion-icon
+                  class="text-primary-variant"
+                  name="logo-whatsapp"
+                ></ion-icon>
+              </div>
+
+              <a
+                href="https://api.whatsapp.com/send/?phone=919834588556&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+                class="text-primary"
+                >Send a message</a
+              >
+            </article>
+          </div>
+          <div class="contact-card">
+            <article>
+              <div>
+                <ion-icon
+                  class="text-primary-variant"
+                  name="logo-linkedin"
+                ></ion-icon>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/gani-codes/"
+                target="_blank"
+                rel="noreferrer"
+                class="text-primary"
+                >Lets connect</a
+              >
+            </article>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form ref="{form}" onSubmit="{sendEmail}">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="7"
+              placeholder="A message for me"
+              required
+            ></textarea>
+            <button class="cta cta-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container footer__container">
+        <div>
+          <h1 class="text-primary">Gani</h1>
+        </div>
+        <div class="hero-socials">
+          <div id="linkedin-icon">
+            <a href="https://www.linkedin.com/in/gani-codes/" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </div>
+          <div id="github-icon">
+            <a
+              href="https://github.com/gani-codes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </div>
+          <div id="email-icon">
+            <a href="mailto:abdulgani.work@gmail.com" target="_blank">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </div>
+          <div id="instagram-icon">
+            <a
+              href="http://instagram.com/gani9_"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
